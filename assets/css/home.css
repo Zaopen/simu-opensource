@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&family=Roboto+Slab:wght@200;400&display=swap');
+
+html,
+body {
+    height: 99%;
+    background: #171717;
+    font-family: 'Roboto Slab', 'Noto Serif SC', serif;
+}
+
+/* 消除移动端按钮和链接点击时的蓝色底色，或旧版浏览器的黄色边框 */
+button,
+input,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.home {
+    color: #fff;
+    width: 99%;
+    height: 59%;
+    position: relative;
+}
+
+.item {
+    width: 295px;
+    height: 171px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: -1rem;
+    font-size: 3rem;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-miyu {
+    font-family: 'Roboto Slab', 'Noto Serif SC', serif;
+    width: 131px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #313131;
+    padding: .7rem 1.5rem;
+    border: 0;
+    border-radius: 3rem;
+}
+
+.b3-miyu {
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #313131;
+    padding: .59rem 1rem;
+    margin-left: .5rem;
+    border: 0;
+    border-radius: 51%;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 149px;
+}
+
+.b1-about {
+    font-family: 'Roboto Slab', 'Noto Serif SC', serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #313131;
+    padding: .79rem 1.25rem;
+    border: 0;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* about.html  */
+.quote {
+    opacity: .51;
+    width: 183px;
+    height: 149px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    margin: auto;
+}
+
+pre {
+    font-family: 'Roboto Slab', 'Noto Serif SC', serif;
+    font-size: .85rem;
+    font-style: italic;
+}
+
+.myword {
+    color: #fff;
+    height: 131px;
+}
+
+.f2-backhome {
+    text-align: center;
+    margin-top: 1px;
+}
+
+.b2-backhome {
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #313131;
+    padding: .59rem 1rem;
+    border: 0;
+    border-radius: 51%;
+    cursor: pointer;
+}

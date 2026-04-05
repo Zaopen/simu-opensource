@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&family=Roboto+Slab:wght@200;400&display=swap');
+
+html,
+body {
+    height: 99.9999%;
+    background: #171717;
+    font-family: 'Roboto Slab', 'Noto Serif SC', serif;
+}
+
+/* 消除移动端按钮和链接点击时的蓝色底色 */
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.page {
+    height: 99.9999%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-content {
+    color: #fff;
+}
+
+h1 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-style: italic;
+    line-height: .5rem;
+    opacity: .51;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-like {
+    margin-top: -4.5rem;
+    margin-bottom: 5.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.sacrifice {
+    width: 101px;
+    height: 201px;
+}
+
+.likeBt {
+    font-size: 1.45rem;
+    background-color: #ffffffaa;
+    border: 0;
+    padding: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 51%;
+    box-shadow: 0 0 5px #000000;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.likeBt:active {
+    animation: scalebt 0.5s;
+}
+
+@keyframes scalebt {
+    0% {transform: scale(1);}
+    30% {transform: scale(0.85);}
+    100% {transform: scale(1);}
+}
+
+.page-pic {
+    display: contents;
+}
+
+.page-bgm {
+    position: absolute;
+    z-index: 0;
+    margin-left: 12.5rem;
+}
+
+.musicBt {
+    width: 283px;
+    height: 283px;
+    color: transparent;
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    border-radius: 51%;
+    box-shadow: 0 0 5px #000000;
+    padding: 0;
+    opacity: .55;
+    cursor: pointer;
+    animation: albumrotate 35s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes albumrotate{
+    from{transform:rotate(-45deg);}
+    to{transform:rotate(315deg);}
+}
+
+img {
+    max-height: 353px;
+    border: 1rem solid #313131;
+    box-shadow: 0 0 5px #000000;
+    margin-left: 9.5rem;
+    z-index: 1;
+}
+
+/* .b4-backhome {
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #313131;
+    padding: .59rem 1rem;
+    margin-left: .5rem;
+    border: 0;
+    border-radius: 51%;
+    cursor: pointer;
+} */
+
+/* 响应式布局 */
+@media screen and (max-width: 960px){
+/* body{
+    background-color:#FF6699
+} */
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.page-like {
+    margin-top: -9.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.page-bgm {
+    margin-left: 9.5rem;
+}
+
+.musicBt {
+    width: 211px;
+    height: 211px;
+}
+
+img {
+    max-height: 265px;
+    margin-left: 6.5rem;
+    border: .75rem solid #313131;
+}
+
+}
+
+/* @media screen and (max-width: 768px){
+body {
+    background-color:#00FF66;
+}
+} */
+
+@media screen and (max-width: 550px){
+body {
+    height: auto;
+}
+
+.page {
+    display: block;
+    text-align: center;
+}
+
+.page-content {
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-bgm {
+    width: 96.1%;
+    margin-top: .5rem;
+    margin-left: 0;
+}
+
+.musicBt {
+    width: 181px;
+    height: 181px;
+}
+
+img {
+    max-height: 313px;
+    border: .75rem solid #313131;
+    margin-left: 0;
+    position: relative;
+    top: 3.5rem;
+}
+
+.page-like {
+    width: 96.1%;
+    margin-top: 35%;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+}
+
+/* @media screen and (max-width: 320px){
+body{
+    background-color:#FFFF00;
+}
+}*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="../static/favicon.png">
+    <!-- 故人姓名，链接展示 -->
+    <title>姓名</title>
+    <!-- 想说的话，不展示 -->
+    <meta name="description" content="想说的话。">
+    <link rel="stylesheet" href="../assets/css/page.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-content">
+            <h1>永远的[敬称] 姓名</h1>
+            <p>忌日：[YYYY年MM月DD日]</p>
+            <!-- 农历干支选其一 -->
+            <p>农历忌日：[己卯年 十一月廿五]</p>
+            <p>干支忌日：[己卯年 丙子月 戊午日]</p>
+            <div class="page-like">
+                <canvas id="thumsSac" class="sacrifice" width="200" height="400"></canvas>
+                <div>
+                    <!-- 可修改祭祀按钮图标 -->
+                    <button id="pageLike" class="likeBt" type="button">🙏</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-pic">
+            <div class="page-bgm">
+                <!-- 自定义音乐名称 -->
+                <button id="bgmusicCtrl" class="musicBt" type="button" name="forevermemories">Forever Memories</button>
+                <!-- 在网上找音乐封面图链接 -->
+                <p id="mcoverURL" style="display: none;"/>https://p1.music.126.net/4YRRmbObaWIpntZvoDeGQw==/109951165826438709.jpg?param=200y200</p>
+                <!-- 本地音乐地址 -->
+                <p id="mURL" style="display: none;">../static/music/demo.mp3</p>
+            </div>
+            <!-- alt为layouts里对应的html名称，用于匹配static/img里的故人照片 -->
+            <img id="memoPic" alt="demo" src="">
+        </div>
+    </div>
+    <!-- 将static/sacrifice里的文件夹，改名为layouts里对应的html名称 -->
+    <script src="../assets/js/sacrifice.js"></script>
+    <script src="../assets/js/page.js"></script>
+</body>
+
+</html>
